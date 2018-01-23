@@ -37,7 +37,11 @@ kops create cluster --cloud=aws --dns-zone=kops.yourdomain.com --master-size=t2.
 
 kops update cluster kops.yourdomain.com --yes
 ```
-#
+# Validate the cluster
+```
+kops validate cluster
+```
+# Get the list of nodes using kubectl
 ```
 kubectl get nodes
 ```
